@@ -1,0 +1,55 @@
+@keyframes moveCloud1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+@keyframes moveCloud2 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+.clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    mix-blend-mode: screen;
+}
+.c1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/cloud1.png);
+    background-size: 25% 25%;
+    background-position-x: 25%;
+    background-position-y: 75%;
+    z-index: -1;
+    animation: moveCloud1 60s linear infinite;
+}
+.c2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/cloud2.png);
+    background-position-x: 25%;
+    background-position-y: 75%;
+    z-index: -1;
+    animation: moveCloud2 45s linear infinite;
+}
+title {
+    color: black;
+}
