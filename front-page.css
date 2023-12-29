@@ -15,12 +15,14 @@
     }
 }
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center the children horizontally */
+    justify-content: center; /* Center the children vertically */
+    height: 100vh; /* Set the height to the full viewport height */
+    text-align: center; /* Center the text */
 }
 .clouds {
     position: absolute;
@@ -52,4 +54,33 @@ body {
 }
 title {
     color: black;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-img-top {
+    position: relative;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, pink 0%, white 100%);
+}
+.weather-details {
+    margin-top: 40px;
+    position: absolute; /* Position the weather details container */
+    width: 100%; /* Make the width of the weather details container equal to the container */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /* Center the text */
+}
+.input {
+    text-align: center;
+}
+h2, h3, h4, h5, h6, .weather-text {
+    margin-top: 10px;
+    color: black;
+
 }
